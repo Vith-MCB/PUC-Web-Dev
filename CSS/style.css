@@ -4,3 +4,49 @@
     max-width: 55px;
 }
 
+nav{
+    background-color: #191A19;
+    font-family: Roboto,sans-serif;
+}
+.carousel-item{
+    display:inline-block;
+}
+
+.carousel-caption{
+    display: inline-block;
+}
+.destaque{
+    background-color: lightgray;
+}
+
+.destaque-titulo{
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lancamentos{
+    margin: 30px;
+}
+
+
+.lancamentosTitulo{
+    display: inline-block;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+#titulo-destaque{
+    text-align: center;
+}
+
+.text{
+    display: inline-block;
+}
+
+
+
