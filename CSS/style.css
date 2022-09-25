@@ -8,26 +8,39 @@ nav{
     background-color: #191A19;
     font-family: Roboto,sans-serif;
 }
-.carousel-item{
-    display:inline-block;
+.item-carrossel{
+    display: flex;
+    justify-content: space-evenly
 }
 
-.carousel-caption{
-    display: inline-block;
+.carousel-indicators{
+    display: block;
 }
 .destaque{
     background-color: lightgray;
+}
+
+.video-destaque{
+
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 .destaque-titulo{
     font-family: Roboto,sans-serif;
     font-weight: bold;
     text-align: center;
+    display: block;
+}
+
+.texto-destaque{
+    
 }
 
 .lancamentos{
     margin: 30px;
 }
+
 
 
 .lancamentosTitulo{
@@ -47,6 +60,5 @@ nav{
 .text{
     display: inline-block;
 }
-
 
 
