@@ -13,6 +13,11 @@ nav{
     justify-content: space-evenly
 }
 
+.corpoSite{
+    background-color: white;
+    font-family: Roboto,sans-serif;
+    padding: 80px;
+}
 .carousel-indicators{
     display: block;
 }
@@ -21,7 +26,6 @@ nav{
 }
 
 .video-destaque{
-
     margin-bottom: 30px;
     margin-left: 30px;
 }
@@ -33,26 +37,6 @@ nav{
     display: block;
 }
 
-.texto-destaque{
-    
-}
-
-.lancamentos{
-    margin: 30px;
-}
-
-
-
-.lancamentosTitulo{
-    display: inline-block;
-    font-family: Roboto,sans-serif;
-    font-weight: bold;
-}
-
-.dropdown{
-    display: inline-block;
-}
-
 #titulo-destaque{
     text-align: center;
 }
@@ -61,4 +45,34 @@ nav{
     display: inline-block;
 }
 
+.lancamentos{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.lancamentosTitulo{
+    display: inline-block;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    position: absolute;
+
+}
+
+.dropdown{
+    display: inline-block;
+    margin-top: 5px;
+    position: absolute;
+    left:73%;
+}
+
+
+#carregarMais{
+    ;
+}
+
+.boldTitulo{
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
