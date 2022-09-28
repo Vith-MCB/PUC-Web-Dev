@@ -63,16 +63,22 @@ nav{
     display: inline-block;
     margin-top: 5px;
     position: absolute;
-    left:73%;
+    left:70%;
 }
 
 
-#carregarMais{
-    ;
+.detalhes{
+    text-align: left;
+    padding-left: 30px;
 }
 
 .boldTitulo{
     font-family: Roboto,sans-serif;
     font-weight: bold;
     font-size: 30px;
+}
+
+#carregarMais{
+    position: relative;
+    left: 45%;
 }
