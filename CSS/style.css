@@ -4,6 +4,8 @@
     max-width: 55px;
 }
 
+
+
 .imagemPlataforma{
     max-height: 500px;
     max-width: 350px;
@@ -15,8 +17,8 @@ nav{
 }
 .item-carrossel{
     display: flex;
-    justify-content: space-evenly
 }
+
 
 .corpoSite{
     background-color: white;
@@ -28,11 +30,6 @@ nav{
 }
 .destaque{
     background-color: lightgray;
-}
-
-.video-destaque{
-    margin-bottom: 30px;
-    margin-left: 30px;
 }
 
 .destaque-titulo{
@@ -71,6 +68,9 @@ nav{
     left:75%;
 }
 
+.texto-destaque{
+    margin-left: 12em;
+}
 
 .detalhes{
     text-align: left;
@@ -98,6 +98,12 @@ nav{
     padding-top: 100px;
 
 }
+
+.plataformas{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
 .plataformasTitulo{
     font-family: Roboto,sans-serif;
     font-weight: bold;
@@ -124,6 +130,15 @@ nav{
     font-weight: bold;
 }
 
+.publishers{
+    background-color: lightgray;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
 .publishersTitulo{
     font-family: Roboto,sans-serif;
@@ -140,9 +155,9 @@ nav{
     display: block;
 }
 
-.principaisJogos{
-    padding-top: 10px;
-    text-align: left;
-    padding-left: 30px;
-    font-weight: bold;
+#logoPUC{
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 30%;
+    right: 3%;
 }

@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap|Prompt:ital,wght@0,200;0,900;1,400;1,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="../imgs/MCB-Logo.jpg" alt="" srcset=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">MCB-Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Destaques</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Lançamentos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Plataformas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Publishers</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -50,45 +54,58 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="item-carrossel">
                   <div class="video-destaque">
-                    <iframe width="420" height="315"
+                    <iframe width="450" height="300"
                     src="https://www.youtube.com/embed/LDnENTDuAiI">
                     </iframe>
                   </div>
                     <div class="texto-destaque">
                     <h1>The Witcher 3</h1>
+                    <p>Ambientado em um gigantesco cenário medieval que dá liberdade total ao jogador, o game, que possui uma jogabilidade não linear e é jogado através de uma perspectiva em terceira pessoa, tem o lendário bruxo Geralt de Rívia como seu protagonista, o qual inicia uma longa jornada pelos Reinos do Norte.</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="col-sm">
               <div class="carousel-item">
                 <div class="item-carrossel">
                   <div class="video-destaque">
-                    <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/LDnENTDuAiI">
+                    <iframe width="450" height="300"
+                    src="https://www.youtube.com/embed/jM2HHp-inug">
                     </iframe>
                   </div>
                     <div class="texto-destaque">
-                    <h1>sadsadsahiihhuiuhasddsasdasd</h1>
+                    <h1>Grand Theft Auto V</h1>
+                    <p>O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador seguindo três criminosos e seus esforços para realizarem assaltos sob a pressão de uma agência governamental. O mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.</p>
+                  </div>
                   </div>
                 </div>
-              </div>
+                </div>
+                <div class="col-sm">
               <div class="carousel-item">
                 <div class="item-carrossel">
                   <div class="video-destaque">
-                    <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/LDnENTDuAiI">
+                    <iframe width="450" height="350"
+                    src="https://www.youtube.com/embed/5b_coh57UXc">
                     </iframe>
                   </div>
                     <div class="texto-destaque">
-                    <h1>sadsadsa asddsasdasd</h1>
+                    <h1>Assassin's Creed Valhalla</h1>
+                    <p>Assassin's Creed Valhalla se ambienta no passado histórico do século IX. Os jogadores jogam na pele de Eivor, um viking que lidera uma tribo para invadir e conquistar o oeste da Inglaterra. O jogo se passa na Noruega e nas terras dos saxões.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+                </div>
+              </div>
+            </div>
+                </div>
         </article>
       </div>
 
@@ -99,12 +116,12 @@
           <div class="dropdown">
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Ordem: popularity
+                Ordem: Popularity
               </button>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><button class="dropdown-item" type="button">Popularity</button></li>
+                <li><button class="dropdown-item" type="button">Avaliation</button></li>
+                <li><button class="dropdown-item" type="button">Price</button></li>
               </ul>
               
             </div>
@@ -115,8 +132,8 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                 <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><button class="dropdown-item" type="button">Adventure</button></li>
+                <li><button class="dropdown-item" type="button">Indie</button></li>
               </ul>
               
             </div>
@@ -126,43 +143,43 @@
           <div class="container text-center" id="containterContent">
             <div class="row">
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
+                <h1 class="boldTitulo">The Witcher 3</h1>
                 <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
 
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
+                <h1 class="boldTitulo">GTA V</h1>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/jM2HHp-inug">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
         
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
+                <h1 class="boldTitulo">AC Valhalla</h1>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/5b_coh57UXc">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
 
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
+                <h1 class="boldTitulo">GOW Ragnarok</h1>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/0N4J-7gsaGc">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
 
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
+                <h1 class="boldTitulo">HZD: F. West</h1>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/pk1B9-qaoTs">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
 
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/LDnENTDuAiI">
+                <h1 class="boldTitulo">Grand Turismo 7</h1>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/9nNaBeWqyFM">
                 </iframe>
                 <h6 class="detalhes">Mais detalhes...</h6>
               </div>
@@ -182,99 +199,140 @@
           <div class="container text-center" id="containterContent">
             <div class="row">
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
+                <h1 class="boldTitulo">Xbox:</h1>
+                <img class="imagemPlataforma" src="https://programadoresbrasil.com.br/wp-content/uploads/2022/01/xbox-one-x-s-edited-1024x576.jpeg" alt="">
                 <h5 class="principaisJogos">Principais Jogos</h5>
                 <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
+                  <li>Halo</li>
+                  <li>Forza Horizon</li>
+                  <li>Fifa</li>
                 </ul>
                 <h6 class="detalhesPlataforma">Mais detalhes...</h6>
               </div>
           
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
+                <h1 class="boldTitulo">Playstation</h1>
+                <img class="imagemPlataforma" src="https://programadoresbrasil.com.br/wp-content/uploads/2020/11/PS5-1-1024x576.png" alt="">
                 <h5 class="principaisJogos">Principais Jogos</h5>
                 <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
+                  <li>God of War</li>
+                  <li>Tom Clancy's Rainbow Six Sierge</li>
                   <li>Tomb Raider</li>
                 </ul>
                 <h6 class="detalhesPlataforma">Mais detalhes...</h6>
               </div>
 
               <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
+                <h1 class="boldTitulo">PC</h1>
+                <img class="imagemPlataforma" src="https://blog.positivocasainteligente.com.br/wp-content/uploads/2020/06/1-1024x576.jpg" alt="">
                 <h5 class="principaisJogos">Principais Jogos</h5>
                 <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
+                  <li>Counter Strike</li>
+                  <li>League Of Legends</li>
+                  <li>Dota II</li>
                 </ul>
                 <h6 class="detalhesPlataforma">Mais detalhes...</h6>
               </div>
         
             </div>
           </div>
+          <button type="button" class="btn btn-secondary text-nowrap" id="carregarMaisPlat">
+            Carregar mais Plataformas
+          </button>
         </div>
-
-        <button type="button" class="btn btn-secondary text-nowrap" id="carregarMaisPlat">
-          Carregar mais Plataformas
-        </button>
-
-        <div class="publishers">
-          <h1 class="publishersTitulo">Publishers</h1>
-          
-          <div class="container text-center" id="containterContent">
-            <div class="row">
-              <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
-                <h5 class="principaisJogos">Principais Jogos</h5>
-                <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                </ul>
-                <h6 class="detalhesPublishers">Mais detalhes...</h6>
-              </div>
-          
-              <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
-                <h5 class="principaisJogos">Principais Jogos</h5>
-                <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                </ul>
-                <h6 class="detalhesPlataforma">Mais detalhes...</h6>
-              </div>
-
-              <div class="col">
-                <h1 class="boldTitulo">Trailer:</h1>
-                <img class="imagemPlataforma" src="../imgs/xboxImage.jpg" alt="">
-                <h5 class="principaisJogos">Principais Jogos</h5>
-                <ul class="listaPlataformas">
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                  <li>Tomb Raider</li>
-                </ul>
-                <h6 class="detalhesPlataforma">Mais detalhes...</h6>
-              </div>
+      </div>
+      
+      <div class="publishers">
+        <h1 class="publishersTitulo">Publishers</h1>
         
+        <div class="container text-center" id="containterContent">
+          <div class="row">
+            <div class="col">
+              <h1 class="boldTitulo">CD Projekt Red</h1>
+              <img class="imagemPlataforma" src="../imgs/CD.png" alt="">
+              <h5 class="principaisJogos">Principais Jogos</h5>
+              <ul class="listaPlataformas">
+                <li>The Witcher 3</li>
+                <li>CyberPunk 2077</li>
+                <li>Gwent</li>
+              </ul>
+              <h6 class="detalhesPlataforma">Mais detalhes...</h6>
             </div>
+        
+            <div class="col">
+              <h1 class="boldTitulo">Sony Computer</h1>
+              <img class="imagemPlataforma" src="../imgs/Sony.jpg" alt="">
+              <h5 class="principaisJogos">Principais Jogos</h5>
+              <ul class="listaPlataformas">
+                <li>God Of War</li>
+                <li>The Last Of Us</li>
+                <li>Uncharted</li>
+              </ul>
+              <h6 class="detalhesPlataforma">Mais detalhes...</h6>
+            </div>
+
+            <div class="col">
+              <h1 class="boldTitulo">Microsoft Studios</h1>
+              <img class="imagemPlataforma" src="../imgs/XGS.jpg" alt="">
+              <h5 class="principaisJogos">Principais Jogos</h5>
+              <ul class="listaPlataformas">
+                <li>Halo</li>
+                <li>Bioshock</li>
+                <li>Fallout</li>
+              </ul>
+              <h6 class="detalhesPlataforma">Mais detalhes...</h6>
+            </div>
+      
           </div>
         </div>
-
         <button type="button" class="btn btn-secondary text-nowrap" id="carregarMaisPlat">
           Carregar mais Publishers
         </button>
 
       </div>
+
+      <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>My Computer Brasil
+                </h6>
+                <p>
+                  Na MCB, você encontra tudo sobre o mundo dos games, desde lançamentos mais badalados até os melhores jogos. Além de notícias sobre os consoles em empresas de games mais famosas do mundo.
+                </p>
+              </div>
+              
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Belo Horizonte, Minas Gerais</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  MyComputerBrasil@mcb.com
+                </p>
+                <p><i class="fas fa-home me-3"></i> Vitor Ribeiro Lacerda, Matrícula: 795992</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright: Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas
+          <img src="../imgs/PUC Minas.png" alt="Logo PUC Minas" id="logoPUC"> 
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
     </div>
   </div>
     
