@@ -59,5 +59,18 @@ function redirectGame(game){
 }
 
 
+function getPlatforms(){
+    var count = 1;
+    fetch('https://api.rawg.io/api/platforms?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
+    .then(corpo =>{corpo.results.forEach(platform => {
+        if(count<4){
+        console.log(platform);
+        $('#nomeplataforma'+count).html(platform.name);
+        $('#imagemplataforma'+count).attr('src',platform.image_background);
 
+        count++;
+        }
+    })})
+}
 
+getPlatforms();
