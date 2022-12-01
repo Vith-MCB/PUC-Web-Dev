@@ -13,7 +13,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    text-decoration-color: white;
+    color: white;
 }
 
 
@@ -26,6 +26,7 @@
     margin-right: auto;
     width: 50%;
     display: block;
+    color: white;
 
 }
 
@@ -37,6 +38,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    color: white;
 
 }
 
@@ -50,20 +52,7 @@
     margin-right: auto;
     display: block;
     width: 50%;
+    color: white;
 }
 
-#destaque-descricao:hover{
-    background-color: white;
-}
 
-#destaque-data:hover{
-    background-color: white;
-}
-
-#destaque-avaliacao:hover{
-    background-color: white;
-}
-
-#destaque-titulo:hover{
-    background-color: white;
-}
