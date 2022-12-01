@@ -1,3 +1,6 @@
+// load function just in one html page
+$(document).ready(function(){
+if (window.location.href == "http://127.0.0.1:5500/HTML/index.html") {
 var contagem = 1;
 fetch('https://api.rawg.io/api/games?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
 .then(corpo=>{corpo.results.forEach(game => {
@@ -7,18 +10,18 @@ fetch('https://api.rawg.io/api/games?key=84860f89c4ba45e0ab92ab9c686dd12c').then
     document.getElementById("jogotitulo"+contagemString).innerText=game.name.length<20 ?  game.name=game.name : game.name=game.name.substring(0,20)+"..."; 
     document.getElementById("avaliação"+contagemString).innerText="Nota do Metacritic: "+game.metacritic;
     document.getElementById("jogoimagem"+contagemString).src=game.background_image;
-
-    //if(game.name.length>20){game.name=game.name.substring(0,20)+"...";}
+    $("#jogotitulo"+contagemString).click(function(){
+        console.log("clicou",game);
+        redirectGame(game);
+    });
     contagem++;
+
 }
 });})
+}});
 
 
 
-getGeneros();
-
-
-getGamesByGenre("indie");
 function getGeneros(){
     fetch('https://api.rawg.io/api/genres?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
     .then(corpo =>{corpo.results.forEach(genre => {
@@ -52,7 +55,7 @@ function getGamesByPublisher(publisher){
 
 //redirect to game page
 function redirectGame(game){
-    window.location.href = "detalhes.html";
+    window.location.href = "detalhes.html?game="+game.id;
 }
 
 
