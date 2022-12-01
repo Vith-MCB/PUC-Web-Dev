@@ -4,15 +4,66 @@
     max-width: 55px;
 }
 
-.corpoSite{
-    background-color: white;
-    font-family: Roboto,sans-serif;
-    padding: 40px;
-}
-
 #destaque-titulo{
+    padding-top: 90px;
     font-family: Roboto,sans-serif;
     font-weight: bold;
     text-align: center;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-decoration-color: white;
+}
+
+
+#destaque-descricao{
+    padding-top: 90px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+
+}
+
+#destaque-data{
+    padding-top: 90px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+#destaque-avaliacao{
+    padding-top: 90px;
+    padding-bottom: 190px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}
+
+#destaque-descricao:hover{
+    background-color: white;
+}
+
+#destaque-data:hover{
+    background-color: white;
+}
+
+#destaque-avaliacao:hover{
+    background-color: white;
+}
+
+#destaque-titulo:hover{
+    background-color: white;
 }

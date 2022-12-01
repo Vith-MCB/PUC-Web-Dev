@@ -59,26 +59,5 @@ function redirectGame(game){
 }
 
 
-//get game description
-function getGameDescription(game){
-    fetch('https://api.rawg.io/api/games?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
-    .then(corpo=>{corpo.results.forEach(game => {
-        console.log(game.description);
-    });})
-}
 
-//get game images
-function getGameImages(game){
-    fetch('https://api.rawg.io/api/games?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
-    .then(corpo=>{corpo.results.forEach(game => {
-        console.log(game.background_image);
-    });})
-}
-
-  
-//game detail page
-function getGameDetail(game){
-    getGameDescription(game);
-    getGameImages(game);
-}
 
