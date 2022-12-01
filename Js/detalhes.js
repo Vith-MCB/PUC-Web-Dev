@@ -9,5 +9,6 @@ getGameById(id);
 function getGameById(id){
     fetch('https://api.rawg.io/api/games/'+id+'?key=84860f89c4ba45e0ab92ab9c686dd12c').then(resposta=>{return resposta.json()})
     .then(corpo=>{console.log(corpo);
+    $('#destaque-titulo').html(corpo.name);
     })
 }
